@@ -1,0 +1,154 @@
+
+body {
+    background-color: #000000;
+    font-family: Consolas, monospace;
+    color: #ffffff;
+    font-family: Consolas, monospace;
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-group label,
+.input-group input {
+    flex: 1;
+    margin: 0.5em;
+}
+
+::placeholder {
+    font-family: Consolas, monospace;
+    color: #707070;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    font-family: Consolas, monospace;
+    color: #ffffff;
+}
+
+::-ms-input-placeholder {
+    font-family: Consolas, monospace;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 24px 0;
+}
+
+.contact-form {
+    position: relative;
+}
+
+.form-control {
+    font-family: "Consolas", monospace;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    font-weight: bold;
+    margin: 16px 0;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding-left: 15px;
+    height: 42px;
+    width: 350px;
+}
+
+.form-control:not(textarea) {
+    height: 42px;
+}
+
+.form-control:hover,
+.form-control:focus {
+    border-color: #28a745;
+}
+
+.submit-btn {
+    background: #28a745;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    width: 800px;
+    margin-top: 30px;
+}
+
+.submit-btn:hover {
+    background: #dc3545;
+}
+
+.error {
+    color: red;
+    display: block;
+    height: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.success {
+    color: #259940;
+}
+
+.message {
+    margin: auto;
+    width: 50%; 
+    margin-top: 10px;
+    height: 10px;
+    white-space: nowrap;
+    text-align: center;
+}
+.emailError{
+    margin: auto;
+    width: 50%; 
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 10px;
+}
+
+@media (max-width: 900px) {
+    .submit-btn {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .form-control,
+    .submit-btn {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
